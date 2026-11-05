@@ -1,0 +1,302 @@
+/* BODY */
+
+body {
+    margin: 0;
+    background-color: #fce4ec;
+    font-family: "Great Vibes", cursive;
+    color: #444;
+}
+
+
+/* HEADER */
+
+header {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: show;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.judul-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px #555;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+}
+
+
+/* JUDUL MEMBESAR */
+
+.judul-header:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+nav {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    text-decoration: none;
+    color: #eaa0d9;
+    font-weight: bold;
+    margin: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+
+/* BAGIAN */
+
+.bagian {
+    width: 85%;
+    margin: 60px auto;
+    scroll-margin-top: 80px;
+}
+
+.bagian h2 {
+    text-align: center;
+    color: #eaa0d9;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+/* ISI */
+
+.isi {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* TEKS */
+
+.teks {
+    flex: 1;
+    line-height: 1.7;
+}
+
+.teks p {
+    margin-bottom: 18px;
+}
+
+
+/* GAMBAR BIASA */
+
+.gambar-satu {
+    width: 350px;
+    height: 240px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.gambar-satu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gambar-satu img:hover {
+    transform: scale(1.1);
+}
+
+
+/* SLIDESHOW */
+
+.slideshow {
+    width: 350px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+/* TOMBOL SLIDESHOW */
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: white;
+}
+
+
+/* THINK BEFORE YOU POST */
+
+.think {
+    width: 80%;
+    margin: 70px auto;
+    padding: 35px;
+    text-align: center;
+    background-color: #f5b7ca;
+    border-radius: 20px;
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+}
+
+.think h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.think p {
+    font-size: 18px;
+}
+
+
+.pertanyaan {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.pertanyaan div {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.pertanyaan div:hover {
+    transform: scale(1.08);
+}
+
+
+/* DAMPAK */
+
+.dua-kotak {
+    display: flex;
+    gap: 25px;
+}
+
+.kotak-dampak {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.kotak-dampak h3 {
+    color: #d65a85;
+}
+
+
+/* KESIMPULAN */
+
+.kesimpulan {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    line-height: 1.7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #d65a85;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+
+/* AGAR BAGUS DI HP */
+
+@media screen and (max-width: 800px) 
+
+   {} .judul-header {
+        font-size: 35px;
+        white-space: normal;
+        width: 90%;
+    }
+
+    .isi {
+        flex-direction: column;
+    }
+
+    .gambar-satu,
+    .slideshow {
+        width: 100%;
+    }
+
+    .dua-kotak {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px;
+    }

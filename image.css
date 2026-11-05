@@ -1,0 +1,67 @@
+body{
+    background-color: #ea0000;
+    background-image: url("background.jpg");
+}
+
+img.ukuran{
+    width: 400px;
+    height: 300px;
+}
+
+img.lengkungan{
+    border-radius: 0% 0% 0% 20%;
+    width: 250px;
+    height: 200px;
+}
+
+div.kelompok{
+    height: 400px;
+    width: 300px;
+    border-radius: 20%;
+    background-color: rgb(42, 165, 97);
+    text-align: center;
+}
+
+div.kelompok img{
+    height: 340px;
+    width: 250px;
+    border-radius: 20%;
+    border: 1px solid rgb(42, 126, 165); 
+}
+div.efek{
+    height: 380px;
+    width: 350px;
+    border-radius: 20%;
+    background-color: rgb(42, 165, 97);
+    text-align: center;
+    padding: 5px;
+}
+
+div.efek img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20%;
+}
+    
+    
+div.efek:hover{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(42, 126, 165);
+    box-shadow: 15px 15px 10px rgb(165, 42, 42);
+}
+
+p.internal{
+    font-family: 'abxcd', Times, serif;
+}
+
+p.external{
+    font-family: 'abxcd', Times, serif;
+    font-size: 20pt;
+}
+/* format font : otf/ttf */
+@font-face{
+    font-family: 'abxcd',;
+    src: url ("singsong/Singsong.otf");
+    
+}
